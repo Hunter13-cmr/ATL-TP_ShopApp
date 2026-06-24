@@ -1,0 +1,11 @@
+<div class="products-grid">
+
+  @for(product of products; track product.id) {
+
+    <app-product-item
+      [product]="product">
+    </app-product-item>
+
+  }
+
+</div>
