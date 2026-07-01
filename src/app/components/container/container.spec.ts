@@ -19,4 +19,9 @@ describe('Container', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the cart control', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).toContain('Panier');
+  });
 });
